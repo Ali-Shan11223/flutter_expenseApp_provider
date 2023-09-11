@@ -1,6 +1,6 @@
-class Task {
+class Expense {
   final String name;
   final double amount;
 
-  Task({required this.name, required this.amount});
+  Expense({required this.name, required this.amount});
 }

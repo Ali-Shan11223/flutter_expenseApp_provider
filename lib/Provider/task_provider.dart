@@ -2,17 +2,17 @@ import 'package:expense_tracker_provider/Model/task_mode.dart';
 import 'package:flutter/material.dart';
 
 class TaskProvider with ChangeNotifier {
-  final List<Task> _tasks = [];
+  final List<Expense> _expense = [];
 
-  List<Task> get tasks => _tasks;
+  List<Expense> get expenses => _expense;
 
-  void addTask(Task task) {
-    _tasks.add(task);
+  void addExpense(Expense task) {
+    _expense.add(task);
     notifyListeners();
   }
 
-  void removeTask(int index) {
-    _tasks.removeAt(index);
+  void removeExpense(int index) {
+    _expense.removeAt(index);
     notifyListeners();
   }
 }
